@@ -8,7 +8,7 @@ import java.util.EventObject;
  *
  * @param <eventType> "data object"
  */
-public abstract class ImageEvent<eventType> extends EventObject {
+public abstract class ImageEvent<eventType> extends EventObject implements Cloneable {
 
 	/**
 	 * 

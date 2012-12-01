@@ -1,16 +1,14 @@
 package image.beans;
 
+import image.events.PlanarImageEvent;
+
 import java.awt.image.renderable.ParameterBlock;
 
 import javax.media.jai.JAI;
 import javax.media.jai.KernelJAI;
 import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
 
-import image.events.PlanarImageEvent;
-import impl.imageProcessing.wrapper.PlanarImageWrapper;
-
-public class DelateBean extends ImageBean {
+public class DelateBean extends AbstractImageBean {
 
 	/**
 	 * 

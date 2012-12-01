@@ -6,8 +6,12 @@ import javax.media.jai.PlanarImage;
 
 import image.events.PlanarImageEvent;
 
-public class RoiBean extends ImageBean {
+public class RoiBean extends AbstractImageBean {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int x;
 	private int y;
 	private int hight;
@@ -55,6 +59,7 @@ public class RoiBean extends ImageBean {
 
 	
 	public RoiBean() {
+		super();
 		this.x = 0;
 		this.y = 0;
 		this.hight = 100;

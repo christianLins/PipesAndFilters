@@ -1,9 +1,8 @@
 package image.events;
 
 import javax.media.jai.PlanarImage;
-import javax.sound.sampled.AudioFileFormat.Type;
 
-public class PlanarImageEvent extends ImageEvent<PlanarImage> implements Cloneable {
+public class PlanarImageEvent extends ImageEvent<PlanarImage> {
 
 	public PlanarImageEvent(Object source, PlanarImage type) {
 		super(source, type);

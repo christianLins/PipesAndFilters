@@ -1,16 +1,20 @@
 package image.beans;
 
+import image.events.PlanarImageEvent;
+
 import java.awt.image.renderable.ParameterBlock;
 
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 import javax.media.jai.operator.MedianFilterDescriptor;
 
-import image.events.PlanarImageEvent;
-import impl.imageProcessing.wrapper.PlanarImageWrapper;
+public class MedianBean extends AbstractImageBean{
 
-public class MedianBean extends ImageBean{
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private int intensity;
 	
 	public enum Mask {SQUARE, SQUARE_SEPERABLE, PLUS, X}

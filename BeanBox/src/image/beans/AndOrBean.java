@@ -5,8 +5,13 @@ import javax.media.jai.PlanarImage;
 
 import image.events.PlanarImageEvent;
 
-public class AndOrBean extends ImageBean {
+public class AndOrBean extends AbstractImageBean {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public enum Function {AND, OR};
 	private Function function;
 	
@@ -14,6 +19,7 @@ public class AndOrBean extends ImageBean {
 	private PlanarImage imageBufferTwo;
 	
 	public AndOrBean() {
+		super();
 		setFunction(Function.AND);
 	}
 
@@ -21,6 +27,7 @@ public class AndOrBean extends ImageBean {
 	public void handleImageEvent(PlanarImageEvent event) {
 		if(imageBufferOne == null) {
 			imageBufferOne = event.getData();
+			return;
 		} else {
 			imageBufferTwo = imageBufferOne;
 			imageBufferOne = event.getData();

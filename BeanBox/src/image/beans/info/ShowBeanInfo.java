@@ -1,21 +1,15 @@
-package image.beans;
+package image.beans.info;
 
 import image.beans.ShowBean;
 import image.events.PlanarImageEvent;
 
-import java.awt.Image;
-import java.awt.image.BufferedImage;
 import java.beans.BeanDescriptor;
 import java.beans.EventSetDescriptor;
 import java.beans.IntrospectionException;
 import java.beans.MethodDescriptor;
 import java.beans.PropertyDescriptor;
 import java.beans.SimpleBeanInfo;
-import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Method;
-
-import javax.imageio.ImageIO;
 
 public class ShowBeanInfo extends SimpleBeanInfo {
 	

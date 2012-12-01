@@ -8,7 +8,12 @@ import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
 
-public class ThresholdBean extends ImageBean {
+public class ThresholdBean extends AbstractImageBean {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	public void handleImageEvent(PlanarImageEvent event) {
@@ -62,6 +67,7 @@ public class ThresholdBean extends ImageBean {
 	}
 
 	public ThresholdBean() {
+		super();
 		this.low = 0;
 		this.high = 40;
 		this.map = 255;

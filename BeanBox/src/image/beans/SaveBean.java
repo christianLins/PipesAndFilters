@@ -1,16 +1,20 @@
 package image.beans;
 
+import image.events.PlanarImageEvent;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 import javax.media.jai.JAI;
 import javax.media.jai.PlanarImage;
 
-import image.events.PlanarImageEvent;
-import impl.imageProcessing.wrapper.PlanarImageWrapper;
-
-public class SaveBean extends ImageBean {
+public class SaveBean extends AbstractImageBean {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String path;
 
 	public String getPath() {
@@ -28,22 +32,37 @@ public class SaveBean extends ImageBean {
 
 
 	public SaveBean() {
-		this.path = "";
+		super();
+		this.path = "c:/output/myOutput.png";
 	}
 
 	
 
 	@Override
 	public void handleImageEvent(PlanarImageEvent event) {
+		PlanarImage temp = inImageBuffer.createSnapshot();
+		
+		FileOutputStream fo = null;
 		try {
-			FileOutputStream fo = new FileOutputStream(path);
-			JAI.create("encode", inImageBuffer, fo, "PNG", null);
-			JAI.create("filestore", inImageBuffer, path, "PNG", null);
+			fo = new FileOutputStream(path);
+			JAI.create("encode", temp, fo, "PNG", null);
+			JAI.create("filestore", temp, path, "PNG", null);
+			System.out.println("image successfully saved");
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			System.out.println("problems saving image");
 			e.printStackTrace();
+		} finally {
+			if(fo != null) {
+				try {
+					fo.flush();
+					fo.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 		}
-		outImageBuffer = event.getData();
+		outImageBuffer = temp;
 	}
 
 }

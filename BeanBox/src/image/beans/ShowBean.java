@@ -2,7 +2,7 @@ package image.beans;
 
 import image.events.PlanarImageEvent;
 
-public class ShowBean extends ImageBean {
+public class ShowBean extends AbstractImageBean {
 
 	/**
 	 * 

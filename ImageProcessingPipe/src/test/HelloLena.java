@@ -1,14 +1,16 @@
 package test;
 
-import java.awt.*;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.Raster;
-import java.awt.image.SampleModel;
+import java.awt.BorderLayout;
+import java.awt.Container;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.*;
-import javax.swing.*;
+import javax.media.jai.JAI;
+import javax.media.jai.KernelJAI;
+import javax.media.jai.PlanarImage;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+
 import com.sun.media.jai.widget.DisplayJAI;
 
 public class HelloLena

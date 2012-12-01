@@ -8,7 +8,13 @@ import javax.media.jai.PlanarImage;
 
 import image.events.PlanarImageEvent;
 
-public class ErodeBean extends ImageBean {
+public class ErodeBean extends AbstractImageBean {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 
 	@Override
 	public void handleImageEvent(PlanarImageEvent event) {

@@ -1,16 +1,12 @@
 package image.beans;
 
+import image.events.PlanarImageEvent;
+
 import java.awt.Graphics;
 
-import image.events.JointPointSegmentEvent;
-import image.events.PlanarImageEvent;
-import impl.imageProcessing.wrapper.PlanarImageWrapper;
-
 import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
 
-@SuppressWarnings("serial")
-public class LoadBean extends ImageBean {
+public class LoadBean extends AbstractImageBean {
 	
 	
 
@@ -22,8 +18,8 @@ public class LoadBean extends ImageBean {
 	private String imageSourcePath;
 	
 	public LoadBean() {
-		imageSourcePath = "c:/loetstellen.jpg";
-		handleImageEvent(null);
+		super();
+		setImageSourcePath("c:/loetstellen.jpg");
 	}
 
 	public String getImageSourcePath() {
@@ -40,14 +36,24 @@ public class LoadBean extends ImageBean {
 	@Override
 	public void paint(Graphics graphics) {
 		super.paint(graphics);
-		String s = "load image";
-		graphics.drawChars(s.toCharArray(), 0, s.length(), 20, 25);
+//		String s = "load image";
+//		graphics.drawChars(s.toCharArray(), 0, s.length(), 20, 25);
+	}
+	
+	@Override
+	protected void beforeHandleImageEvent() {
+		try {
+			inImageBuffer = JAI.create("fileload", imageSourcePath);
+		} catch (Exception e){
+			System.out.println("image could not be loaded " + imageSourcePath);
+		}
+		 	
 	}
 	
 
 	@Override
 	protected void handleImageEvent(PlanarImageEvent event) {
-		outImageBuffer = inImageBuffer = JAI.create("fileload", imageSourcePath);	
+		outImageBuffer = inImageBuffer;	
 		
 	}
 }
