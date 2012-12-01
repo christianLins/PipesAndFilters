@@ -1,0 +1,267 @@
+<class-diagram version="1.0.10" icons="true" automaticImage="PNG" always-add-relationships="false" 
+  generalizations="true" realizations="false" associations="false" dependencies="false" nesting-relationships="false">  
+  <package id="1" corner="BOTTOM_RIGHT" language="java" name="framework" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework" binary="false">    
+    <position height="1392" width="1097" x="12" y="11"/>    
+    <display autosize="false" stereotype="true"/>  
+  </package>  
+  <package id="2" corner="BOTTOM_RIGHT" language="java" name="framework.filters" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework/filters" binary="false">    
+    <position height="658" width="964" x="35" y="95"/>    
+    <display autosize="false" stereotype="true"/>  
+  </package>  
+  <package id="3" corner="BOTTOM_RIGHT" language="java" name="framework.filters.sink" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework/filters/sink" binary="false">    
+    <position height="313" width="396" x="53" y="140"/>    
+    <display autosize="false" stereotype="true"/>  
+  </package>  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="framework.filters.sink.AbstractSink" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/sink/AbstractSink.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="141" y="250"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" corner="BOTTOM_RIGHT" language="java" name="framework.filters.sink.Sink" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/sink/Sink.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="180" y="382"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="framework.filters.sink.RunnableSink" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/sink/RunnableSink.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="369" y="234"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <package id="7" corner="BOTTOM_RIGHT" language="java" name="framework.filters.source" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/source" binary="false">    
+    <position height="305" width="479" x="496" y="147"/>    
+    <display autosize="false" stereotype="true"/>  
+  </package>  
+  <interface id="8" corner="BOTTOM_RIGHT" language="java" name="framework.filters.source.Source" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/source/Source.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="678" y="369"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" corner="BOTTOM_RIGHT" language="java" name="framework.filters.source.AbstractSource" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/source/AbstractSource.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="853" y="283"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" corner="BOTTOM_RIGHT" language="java" name="framework.filters.source.RunnableSource" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/source/RunnableSource.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="601" y="237"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="11" corner="BOTTOM_RIGHT" language="java" name="framework.filters.MinimalFilter" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/MinimalFilter.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="199" y="507"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <package id="12" corner="BOTTOM_RIGHT" language="java" name="framework.pipes" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework/pipes" binary="false">    
+    <position height="200" width="989" x="37" y="999"/>    
+    <display autosize="false" stereotype="true"/>  
+  </package>  
+  <class id="13" corner="BOTTOM_RIGHT" language="java" name="framework.pipes.AbstractPipe" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/pipes/AbstractPipe.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="163" y="1113"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" corner="BOTTOM_RIGHT" language="java" name="framework.pipes.SimplePipeImpl" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/pipes/SimplePipeImpl.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="931" y="1164"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="15" corner="BOTTOM_RIGHT" language="java" name="framework.pipes.Pipe" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/pipes/Pipe.java" binary="false">    
+    <position height="-1" width="-1" x="411" y="1065"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="16" corner="BOTTOM_RIGHT" language="java" name="framework.AbstractIOPipelineComponent" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/AbstractIOPipelineComponent.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="157" y="885"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="17" corner="BOTTOM_RIGHT" language="java" name="framework.filters.Filter" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/Filter.java" binary="false">    
+    <position height="-1" width="-1" x="459" y="617"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" corner="BOTTOM_RIGHT" language="java" name="framework.filters.AbstractFilter" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/AbstractFilter.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="155" y="673"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="19" corner="BOTTOM_RIGHT" language="java" name="framework.filters.RunnableFilter" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/filters/RunnableFilter.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="457" y="505"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="false" package="false" protected="false" private="false"/>    
+    </display>  
+  </class>  
+  <interface id="20" corner="BOTTOM_RIGHT" language="java" name="framework.Readable" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework/Readable.java" binary="false">    
+    <position height="-1" width="-1" x="533" y="895"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="21" corner="BOTTOM_RIGHT" language="java" name="framework.Writeable" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework/Writeable.java" binary="false">    
+    <position height="-1" width="-1" x="371" y="898"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <interface id="22" corner="BOTTOM_RIGHT" language="java" name="framework.PipelineDataObject" 
+    project="PipesAndFiltersFramework" file="/PipesAndFiltersFramework/src/framework/PipelineDataObject.java" 
+    binary="false">    
+    <position height="73" width="153" x="741" y="854"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <realization id="23">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="21"/>  
+  </generalization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <realization id="28">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <realization id="31">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <realization id="32">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="33">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <realization id="34">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="21"/>  
+  </generalization>  
+  <association id="36">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="37" name="source"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="40" name="sink"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <realization id="43">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <generalization id="44">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

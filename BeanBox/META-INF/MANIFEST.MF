@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+
+Name: test/MyBean.class
+Java-Bean: True
+
+Name: image/beans/LoadBean.class
+Java-Bean: True
+
+Name: image/beans/ShowBean.class
+Java-Bean: True
+
+Name: image/beans/AndOrBean.class
+Java-Bean: True
+
+Name: image/beans/DelateBean.class
+Java-Bean: True
+
+Name: image/beans/ErodeBean.class
+Java-Bean: True
+
+Name: image/beans/MedianBean.class
+Java-Bean: True
+
+Name: image/beans/RoiBean.class
+Java-Bean: True
+
+Name: image/beans/ThresholdBean.class
+Java-Bean: True
+
+Name: image/beans/SaveBean.class
+Java-Bean: True
+
+Name: image/beans/ShowBeanInfo.class

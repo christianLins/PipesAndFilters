@@ -1,0 +1,61 @@
+<sequence-diagram version="1.0.10" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="impl.textProcessing.TextPushPipe" project="PipesAndFilters" 
+    file="/PipesAndFilters/src/impl/textProcessing/TextPushPipe.java" binary="false" label="textPushPipe" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="141" y="0"/>    
+    <execution id="2">      
+      <position height="147" width="101" x="5" y="151"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="framework.filters.source.RunnableSource" project="PipesAndFiltersFramework" 
+    file="/PipesAndFiltersFramework/src/framework/filters/source/RunnableSource.java" binary="false" 
+    label="runnableSource" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="521" y="0"/>    
+    <execution id="4">      
+      <position height="105" width="149" x="110" y="172"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="impl.textProcessing.source.TextSource" project="PipesAndFilters" 
+    file="/PipesAndFilters/src/impl/textProcessing/source/TextSource.java" binary="false" label="textSource" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="486" y="0"/>    
+    <execution id="7">      
+      <position height="63" width="120" x="263" y="193"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="impl.textProcessing.word.WordFilter" project="PipesAndFilters" 
+    file="/PipesAndFilters/src/impl/textProcessing/word/WordFilter.java" binary="false" label="wordFilter" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="841" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="111" x="387" y="214"/>    
+    </execution>  
+  </object>  
+  <object id="12" language="java" name="impl.textProcessing.line.LineFilter" project="PipesAndFilters" 
+    file="/PipesAndFilters/src/impl/textProcessing/line/LineFilter.java" binary="false" label="lineFilter" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="984" y="0"/>  
+  </object>  
+  <object id="13" language="java" name="impl.textProcessing.page.PageFilter" project="PipesAndFilters" 
+    file="/PipesAndFilters/src/impl/textProcessing/page/PageFilter.java" binary="false" label="pageFilter" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="1000" y="0"/>  
+  </object>  
+  <object id="14" language="java" name="impl.textProcessing.sink.BookSink2File" project="PipesAndFilters" 
+    file="/PipesAndFilters/src/impl/textProcessing/sink/BookSink2File.java" binary="false" label="bookSink2File" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="1127" y="0"/>  
+  </object>  
+  <message id="3" operation="run():void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>
+</sequence-diagram>
